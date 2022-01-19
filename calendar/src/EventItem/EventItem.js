@@ -1,4 +1,4 @@
-import React from 'react';
+import './EventItem.css';
 import moment from 'moment';
 
 function EventItem ({ event, handleDeleteEvent }) {

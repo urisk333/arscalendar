@@ -1,0 +1,29 @@
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  margin-top: 3rem;
+}
+
+.auth-button {
+  height: 40px;  
+  width: 160px;
+  font-family: 'Dongle', sans-serif;
+  font-size: 1.25rem;
+  background-color: #EED010;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px grey;
+  text-align: center;
+  padding-top: 0.25rem;
+}
+
+#signin-button {
+  margin-right: 10px;
+}
+
+#signout-button {
+  margin-left: 10px;
+}

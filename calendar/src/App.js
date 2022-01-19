@@ -84,12 +84,14 @@ function App () {
   return (
     <div className="App">
       <BrowserRouter>
-        <Link to="/events">
-          <button className="auth-button" id="signin-button" onClick={handleAuthClick}>Sign in with Google</button>
-        </Link>
-        <Link to="/">
-          <button className="auth-button" id="signout-button" onClick={handleSignOutClick}>Sign out with Google</button> 
-        </Link>
+        <div className="buttons">
+          <Link to="/events">
+            <button className="auth-button" id="signin-button" onClick={handleAuthClick}>Sign in with Google</button>
+          </Link>
+          <Link to="/">
+            <button className="auth-button" id="signout-button" onClick={handleSignOutClick}>Sign out with Google</button> 
+          </Link>
+        </div>
         <Routes>
           <Route path="/events" element={<EventList events={events} />}></Route>
         </Routes>

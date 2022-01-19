@@ -1,0 +1,27 @@
+.event-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-container .event-item {
+  background-color: #EED010;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  padding-left: 6px;
+}
+
+.event-title {
+  height: 18px;
+}
+
+.event-info {
+  height: auto;
+  line-height: 1.5rem;
+}
+
+.delete-button {
+  background-color: transparent;
+  font-weight: bold;
+  margin-left: 92%;
+}

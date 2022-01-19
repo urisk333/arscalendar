@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Dongle', sans-serif;
+  font-size: 20px;
+  background-image: url("./Assets/background_pic.png");
+  background-repeat: repeat;
+}
+
+body::-webkit-scrollbar {
+  width: 24px;               
+}
+
+body::-webkit-scrollbar-track {
+  background: white;       
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;    
+  border-radius: 12px;       
+}
+
+html {
+  overflow-y: scroll;
+}
+
+button, button:active, button:visited, button:focus, button:hover {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+a:active {
+  transition: 200ms, ease;
+}
