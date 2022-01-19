@@ -1,5 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import EventList from './EventList/EventList';
 
 const CLIENT_ID = process.env.REACT_APP_GOOGLE_CLIENT_ID;
 const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
@@ -81,8 +83,17 @@ function App () {
 
   return (
     <div className="App">
-      <button className="auth-button" id="signin-button" onClick={handleAuthClick}>Sign in with Google</button>
-      <button className="auth-button" id="signout-button" onClick={handleSignOutClick}>Sign out with Google</button> 
+      <BrowserRouter>
+        <Link to="/events">
+          <button className="auth-button" id="signin-button" onClick={handleAuthClick}>Sign in with Google</button>
+        </Link>
+        <Link to="/">
+          <button className="auth-button" id="signout-button" onClick={handleSignOutClick}>Sign out with Google</button> 
+        </Link>
+        <Routes>
+          <Route path="/events" element={<EventList events={events} />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

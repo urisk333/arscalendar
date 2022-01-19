@@ -1,6 +1,6 @@
 import React from 'react';
 
-function EventList () {
+function EventList ({ events }) {
 
   return (
     <div>
