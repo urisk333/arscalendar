@@ -34,7 +34,7 @@ Follow the next steps to set up your Google Calendar project, which is necessary
 4. Go to **Credentials**:
 
 - click **CREATE CREDENTIALS** -> choose **API key** (Once the key is created, use it in your application)
-- click **CREATE CREDENTIALS** -> choose **OAuth client ID** -> Application type **Web application** -> Name `The name of the app` -> Authorized Javascript origins **http://localhost:3000** -> click **CREATE** (Once the Client ID is created, use it in your application)
+- click **CREATE CREDENTIALS** -> choose **OAuth client ID** -> Application type **Web application** -> Name `The name of the app` -> Authorized Javascript origins `http://localhost:3000` -> click **CREATE** (Once the Client ID is created, use it in your application)
 
 
 ## Notes
@@ -53,7 +53,8 @@ git clone https://github.com/urisk333/arscalendar
 ```
 
 2. Add the credentials:
-Create .env file in the app's root folder, and add the credentials, created in the previous steps, to the file:
+
+- Create .env file in the app's root folder, and add the credentials, created in the previous steps, to the file:
 ```
 REACT_APP_GOOGLE_CLIENT_ID=
 REACT_APP_GOOGLE_API_KEY=
