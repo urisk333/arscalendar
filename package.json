@@ -1,0 +1,19 @@
+{
+  "name": "arscalendar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urisk333/arscalendar.git"
+  },
+  "author": "Ivan Car",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/urisk333/arscalendar/issues"
+  },
+  "homepage": "https://github.com/urisk333/arscalendar#readme"
+}
